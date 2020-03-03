@@ -1,0 +1,19 @@
+.app {
+  text-align: center;
+    background: linear-gradient(#424242, #272727, #27272700) no-repeat, #1d1d1d;
+    height: 100vh;
+    background-size: 100vw 8rem;
+}
+
+.appLogo {
+  pointer-events: none;
+}
+
+.appHeader {
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
