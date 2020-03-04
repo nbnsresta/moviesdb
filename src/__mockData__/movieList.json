@@ -1,0 +1,91 @@
+{
+  "page": 12,
+  "results": [
+    {
+      "id": 680,
+      "video": false,
+      "vote_count": 17549,
+      "vote_average": 8.5,
+      "title": "Pulp Fiction",
+      "release_date": "1994-09-10",
+      "original_language": "en",
+      "original_title": "Pulp Fiction",
+      "genre_ids": [
+        80,
+        53
+      ],
+      "backdrop_path": "/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+      "adult": false,
+      "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+      "poster_path": "/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+      "popularity": 33.662,
+      "media_type": "movie"
+    },
+    {
+      "original_name": "Sex Education",
+      "id": 81356,
+      "name": "Sex Education",
+      "vote_count": 411,
+      "vote_average": 8.1,
+      "first_air_date": "2019-01-11",
+      "poster_path": "/4Bph0hhnDH6dpc0SZIV522bLm4P.jpg",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "original_language": "en",
+      "backdrop_path": "/u23G9KZregWHs1use6ir1fX27gl.jpg",
+      "overview": "Inexperienced Otis channels his sex therapist mom when he teams up with rebellious Maeve to set up an underground sex therapy clinic at school.",
+      "origin_country": [
+        "GB"
+      ],
+      "popularity": 63.368,
+      "media_type": "tv"
+    },
+    {
+      "id": 216015,
+      "video": false,
+      "vote_count": 7070,
+      "vote_average": 5.5,
+      "title": "Fifty Shades of Grey",
+      "release_date": "2015-02-11",
+      "original_language": "en",
+      "original_title": "Fifty Shades of Grey",
+      "genre_ids": [
+        18,
+        53,
+        10749
+      ],
+      "backdrop_path": "/vNO3d4Uj0Z6N0twXsDqMmGY7AOn.jpg",
+      "adult": false,
+      "overview": "When college senior Anastasia Steele steps in for her sick roommate to interview prominent businessman Christian Grey for their campus paper, little does she realize the path her life will take. Christian, as enigmatic as he is rich and powerful, finds himself strangely drawn to Ana, and she to him. Though sexually inexperienced, Ana plunges headlong into an affair -- and learns that Christian's true sexual proclivities push the boundaries of pain and pleasure.",
+      "poster_path": "/jV8wnk3Jgz6f7degmT3lHNGI2tK.jpg",
+      "popularity": 36.9,
+      "media_type": "movie"
+    },
+    {
+      "original_name": "Stranger Things",
+      "id": 66732,
+      "name": "Stranger Things",
+      "vote_count": 3032,
+      "vote_average": 8.3,
+      "first_air_date": "2016-07-15",
+      "poster_path": "/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg",
+      "genre_ids": [
+        18,
+        9648,
+        10765
+      ],
+      "original_language": "en",
+      "backdrop_path": "/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+      "overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+      "origin_country": [
+        "US"
+      ],
+      "popularity": 46.731,
+      "media_type": "tv"
+    }
+  ],
+  "total_pages": 1000,
+  "total_results": 20000
+}

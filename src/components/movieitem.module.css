@@ -1,0 +1,11 @@
+.movieItem {
+  margin: 8px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.movieTitle {
+  font-size: 12pt;
+  margin-top: 1rem;
+  color: white;
+}

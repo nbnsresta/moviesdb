@@ -15,6 +15,7 @@ function App() {
       <main>
         <SectionRow title="Trending Movies" category={categories.trending} />
         <SectionRow title="New Movies" category={categories.new} />
+        <SectionRow title="Upcoming Movies" category={categories.upcoming} />
       </main>
     </div>
   );

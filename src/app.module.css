@@ -1,6 +1,6 @@
 .app {
   text-align: center;
-    background: linear-gradient(#424242, #272727, #27272700) no-repeat, #1d1d1d;
+    background: linear-gradient(#424242, #272727, #27272700) no-repeat;
     height: 100vh;
     background-size: 100vw 8rem;
 }
@@ -13,7 +13,8 @@
   height: 4rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 0 2rem;
 }

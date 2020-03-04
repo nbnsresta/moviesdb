@@ -14,12 +14,13 @@ if (isDevelopment) {
   middlewares.push(createLogger({ collapsed: true }));
 }
 
-const store = configureStore({
-  reducer: rootReducer,
-  middleware: middlewares,
-  devTools: isDevelopment
-});
-
-sagaMiddleware.run(rootSaga);
-
-export default store;
+const storeConfig = () => {
+  const store = configureStore({
+    reducer: rootReducer,
+    middleware: middlewares,
+    devTools: isDevelopment
+  });
+  sagaMiddleware.run(rootSaga);
+  return store;
+};
+export default storeConfig;

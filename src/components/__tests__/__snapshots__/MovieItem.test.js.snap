@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render | MovieItem Component renders properly 1`] = `"<div class=\\"movieItem\\"><img src=\\"http://image.tmdb.org/t/p/w185/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg\\" alt=\\"Pulp Fiction\\"><span class=\\"movieTitle\\">Pulp Fiction</span></div>"`;

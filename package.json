@@ -13,6 +13,7 @@
     "react": "^16.13.0",
     "react-autocomplete": "^1.8.1",
     "react-dom": "^16.13.0",
+    "react-multi-carousel": "^2.5.2",
     "react-redux": "^7.2.0",
     "react-scripts": "3.4.0",
     "redux": "^4.0.5",
@@ -22,9 +23,19 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom --runInBand --silent",
+    "test:report": "react-scripts test --env=jsdom --coverage --silent",
     "eject": "react-scripts eject",
     "format": "prettier --write \"**/*.{js,md,s?css}\""
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts",
+      "!src/index.js",
+      "!src/bootstrap/serviceWorker.js",
+      "!src/bootstrap/setupTests.js"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
