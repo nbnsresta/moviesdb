@@ -45,7 +45,7 @@ const responsive = {
 
 export default ({ title, category }) => {
   const dispatch = useDispatch();
-  const movies = useSelector(state => state.movies[category].movies)
+  const movies = useSelector(state => state.movies[category].movies);
   useEffect(() => {
     dispatch(pagesSlice.actions.getMovies({ category: categories[category], page: 1 }));
   }, [category, dispatch]);

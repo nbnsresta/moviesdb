@@ -1,10 +1,10 @@
 import configureStore from "../configureStore";
-import movieList from '../../__mockData__/movieList.json'
+import movieList from "../../__mockData__/movieList.json";
 
 let store;
 beforeEach(() => {
   store = configureStore();
-})
+});
 
 const defaultState = {
   search: { latestPage: 0, movies: [] },
@@ -28,4 +28,3 @@ describe("Initialization", () => {
     expect(state).toEqual(defaultState);
   });
 });
-

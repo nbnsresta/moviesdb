@@ -1,0 +1,34 @@
+.main {
+ text-align: start;
+ color: white;
+ margin: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.posterImage {
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.overview {
+  margin: 0 2rem;
+  text-align: justify;
+}
+
+@media(max-width:592px) {
+
+  .content {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .posterImage {
+    align-self: center;
+    max-width: 100%;
+  }
+}
+

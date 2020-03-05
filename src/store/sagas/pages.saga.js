@@ -1,4 +1,4 @@
-import { all, takeLatest, put, putResolve } from "redux-saga/effects";
+import { all, takeLatest, put } from "redux-saga/effects";
 import pageSlice from "../slices/pages.slice";
 import moviesSlice from "../slices/movies.slice";
 import singleMovieSlice from "../slices/singleMovie.slice";
@@ -25,31 +25,22 @@ export function* getSingleMovieDone(action) {
 export function* getMovies(action) {
   switch (action.payload.category) {
     case categories.trending:
-      yield putResolve({
+      yield put({
         type: pageSlice.actions.trendingMoviesReadEventStart.type,
         payload: action.payload
       });
-      yield putResolve({
-        type: pageSlice.actions.trendingMoviesReadEventEnd.type
-      })
       break;
     case categories.new:
-      yield putResolve({
+      yield put({
         type: pageSlice.actions.newMoviesReadEventStart.type,
         payload: action.payload
       });
-      yield putResolve({
-        type: pageSlice.actions.newMoviesReadEventEnd.type
-      })
       break;
     case categories.upcoming:
       yield put({
         type: pageSlice.actions.upcomingMoviesReadEventStart.type,
         payload: action.payload
       });
-      yield putResolve({
-        type: pageSlice.actions.upcomingMoviesReadEventEnd.type
-      })
       break;
     default:
       throw new Error("Invalid category type");
@@ -129,7 +120,7 @@ export default function* pagesSaga() {
       pageSlice.actions.upcomingMoviesReadEventStart.type,
       getUpcomingMovies
     ),
-    // takeLatest(moviesSlice.actions.getMoviesDone.type, getMoviesDone),
-    // takeLatest(moviesSlice.actions.getMoviesError.type, getMoviesError)
+    takeLatest(moviesSlice.actions.getMoviesDone.type, getMoviesDone),
+    takeLatest(moviesSlice.actions.getMoviesError.type, getMoviesError)
   ]);
 }

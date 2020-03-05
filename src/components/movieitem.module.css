@@ -2,7 +2,23 @@
   margin: 8px;
   display: inline-flex;
   flex-direction: column;
+  cursor: pointer;
 }
+
+.movieImage {
+  position: relative;
+  height: 280px;
+  width: 180px;
+  object-fit: cover;
+  object-position: center;
+  filter: contrast(1.0) brightness(1.0);
+}
+
+.movieItem:hover .movieImage {
+  filter: contrast(1.2) brightness(1.1);
+  transition: all ease 200ms;
+}
+
 
 .movieTitle {
   font-size: 12pt;

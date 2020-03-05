@@ -1,6 +1,7 @@
 import React from "react";
-import SectionRow from "./components/SectionRow";
-import { categories } from "./store/constants";
+import { Switch, Route } from "react-router-dom";
+import Homepage from "./components/Homepage";
+import MovieProfile from "./components/MovieProfile";
 
 import logo from "./res/logo.svg";
 import css from "./app.module.css";
@@ -12,11 +13,10 @@ function App() {
         <img src={logo} className={css.appLogo} alt="logo" />
         {/* <SearchBar /> */}
       </header>
-      <main>
-        <SectionRow title="Trending Movies" category={categories.trending} />
-        <SectionRow title="New Movies" category={categories.new} />
-        <SectionRow title="Upcoming Movies" category={categories.upcoming} />
-      </main>
+      <Switch>
+        <Route path="/" exact component={Homepage} />
+        <Route path="/movie/:movieId" component={MovieProfile} />
+      </Switch>
     </div>
   );
 }

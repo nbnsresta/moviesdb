@@ -1,5 +1,6 @@
 import React from "react";
 import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
 import { render } from "enzyme";
 import App from "./App";
 import configureStore from "./store/configureStore";
@@ -9,7 +10,9 @@ beforeEach(() => {});
 test("renders learn react link", () => {
   const wrapper = render(
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </Provider>
   );
 
