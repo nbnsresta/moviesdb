@@ -23,18 +23,20 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --runInBand --silent",
-    "test:report": "react-scripts test --env=jsdom --coverage --silent",
+    "test": "react-scripts test --env=jsdom --runInBand --silent --watchAll=false",
+    "test:report": "react-scripts test --env=jsdom --runInBand --coverage --silent --watchAll=false",
     "eject": "react-scripts eject",
     "format": "prettier --write \"**/*.{js,md,s?css}\""
   },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
+      "src/**/*.saga.js",
+      "src/**/*.slice.js",
       "!src/**/*.d.ts",
       "!src/index.js",
-      "!src/bootstrap/serviceWorker.js",
-      "!src/bootstrap/setupTests.js"
+      "!src/serviceWorker.js",
+      "!src/setupTests.js"
     ]
   },
   "eslintConfig": {

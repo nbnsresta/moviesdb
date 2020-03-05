@@ -1,18 +1,22 @@
+import axios from "axios";
 import movieList from "../__mockData__/movieList.json";
 import movie from "../__mockData__/movie.json";
 
-const axios = ({ url }) => {
+const axiosMock = ({ url }) => {
+  const similarMoviesUrl = url.match(/^\/movie\/.+?\/similar/);
+  const movieUrl = url.match(/^\/movie\/.+/);
+
   switch (url) {
     case "/trending/all/day":
     case "/movie/now_playing":
     case "/movie/upcoming":
-    case url.match(/^\/movie\/.+?\/similar/):
+    case similarMoviesUrl && similarMoviesUrl[0]:
     case "/search/movie":
       return Promise.resolve({
         data: movieList
       });
 
-    case url.match(/^\/movie\/.+/):
+    case movieUrl && movieUrl[0]:
       return Promise.resolve({
         data: movie
       });
@@ -22,10 +26,6 @@ const axios = ({ url }) => {
   }
 };
 
-axios.interceptors = {
-  request: {
-    use: () => {}
-  }
-};
+axiosMock.interceptors = axios.interceptors;
 
-export default axios;
+export default axiosMock;

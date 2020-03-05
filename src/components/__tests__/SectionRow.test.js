@@ -9,9 +9,9 @@ beforeEach(() => {
   store = configureStore();
 });
 
-describe("render", () => {
-  it("renders properly", () => {
-    const wrapper = mount(
+describe("Render | SectionRow", () => {
+  it("component renders properly", () => {
+    const wrapper = render(
       <Provider store={store}>
         <SectionRow category="new" title="New" />
       </Provider>
